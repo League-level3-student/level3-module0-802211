@@ -14,7 +14,7 @@ public class _01_RobotRace {
 	}
 		//2. create an array of 5 robots.
 	public static void stuff() {
-		Robot[] r = new Robot[5];
+		Robot[] r = new Robot[10];
 		//3. use a for loop to initialize the robots.
 		int x = 0;
 		
@@ -32,20 +32,21 @@ public class _01_RobotRace {
     	for (int j = 0; j < r.length; j++) {
     		int y = new Random().nextInt(50);
 			r[j].move(y);
+			r[j].turn(5);
     if(r[j].getY() <= 0) {
     	raceFinished = true;
-    	System.out.println("Robot " + j + "is the winner!");
+    	System.out.println("Robot " + j + "is the winner! \n *Throws a party" );
     }
     
     	}
 		}
 		//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
     		
-		//7. declare that robot the winner and throw it a party!     ???///|V|V|\\\<< START HERE >>///|V|V|\\\???
-    	
+		//7. declare that robot the winner and throw it a party! 
 		//8. try different races with different amounts of robots.
 	}
-	    //9. make the robots race around a circular track.
+	    //9. make the robots race around a circular track.    ???///|V|V|\\\<< START HERE >>///|V|V|\\\???
+    	
 
 	
 }
